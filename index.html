@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- font aswome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="imag/logo.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+  </head>
+  <body class="bg-black">
+    <!-- side nave-bare start-->
+    <nav class="z-3">
+      <div class="container">
+        <div class="row min-vh-100">
+          <div class="sid-heddin-nav min-vh-100 bg-black">
+            <div class="row min-vh-100">
+              <div class="links">
+                <ul class="navLinks p-2">
+                  <li class="navItem slide-top my-3 mx-2">
+                    <a href="#search" class="active">search</a>
+                  </li>
+                  <li class="navItem slide-top my-3 mx-2">
+                    <a href="#catogries" class="">catogries</a>
+                  </li>
+                  <li class="navItem slide-top my-3 mx-2">
+                    <a href="#area" class="">area</a>
+                  </li>
+                  <li class="navItem slide-top my-3 mx-2">
+                    <a href="#ingredients" class="">ingredients</a>
+                  </li>
+                  <li class="navItem slide-top my-3 mx-2">
+                    <a href="#contact" class="">contact us</a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="nav-footer d-flex justify-content-center align-content-center flex-column pt-4"
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="footer-icon">
+                        <i class="fa-brands mx-1 fa-facebook"></i>
+                        <i class="fa-brands mx-1 fa-twitter"></i>
+                        <i class="fa-solid mx-1 fa-globe"></i>
+                      </div>
+                      <div class="footer-info">
+                        <p class="lead">
+                          Copyright Â© 2019 All Rights Reserved.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="side-nav d-flex flex-column justify-content-between">
+            <div class="logo mx-auto my-2">
+              <img src="imag/logo.png" class="w-3rem d-block" alt="logo" />
+            </div>
+            <div class="control-icon mx-auto">
+              <div class="open">
+                <i id="openBtn" class="fa-solid fa-bars fa-2x"></i>
+              </div>
+              <div class="close">
+                <i id="closeBtn" class="fa-solid d-none fa-x fa-2x"></i>
+              </div>
+            </div>
+            <div class="nvigiyionSher-icon mx-auto mb-2">
+              <div class="glopal mb-1">
+                <i class="fa-solid fa-globe d-block fa-2x"></i>
+              </div>
+              <div class="shere">
+                <i class="fa-solid fa-share-nodes fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- side nave-bare end-->
+    <!-- ================================================================== -->
+
+    <main>
+      <!-- mainSection(display) start-->
+      <section class="main" id="main">
+        <div class="container">
+          <div class="row g-3 mt-3" id="homeDidplay">
+            <div
+              class="loader-body d-flex justify-content-center align-items-center position-fixed"
+            >
+              <span class="loader"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- mainSection(display) end-->
+
+      <!-- ================================================================== -->
+
+      <!-- searchSection(displaySearshRuselt) start-->
+      <section id="search" class="search p-4 d-none" id="search">
+        <div class="container w-75">
+          <div class="row py-4">
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control bg-black text-white name"
+                  id="floatingInput"
+                  placeholder="search by name"
+                />
+                <label for="floatingInput" class="lebal-color">
+                  search by name</label
+                >
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control bg-black text-white searchByLetter"
+                  id="floatingPassword"
+                  placeholder="search by letter"
+                />
+                <label for="floatingPassword" class="lebal-color">
+                  search by first letter</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row g-3 mt-3" id="displayByName"></div>
+        </div>
+      </section>
+      <!-- searchSection(displaySearshRuselt) end-->
+
+      <!-- ================================================================== -->
+      <!-- catogoriesSection(displaycatogories) start-->
+      <section class="catogries p-3 d-none" id="catogries">
+        <div class="container p-3" id="container">
+          <div class="row p-3 g-3" id="catogrie"></div>
+          <div class="row g-3" id="catogrieTwo"></div>
+        </div>
+      </section>
+      <!-- catogroriesSection(displaycatogories) end-->
+
+      <!-- ================================================================== -->
+
+      <!-- aereasSection(displayAreas) start-->
+
+      <section class="areas p-4 d-none" id="area">
+        <div class="container p-4">
+          <div class="row p-2 g-3 text-center" id="areas"></div>
+          <div class="row p-2 g-3 text-center" id="areasmeals"></div>
+        </div>
+      </section>
+      <!-- aereasSection(displayAereas) end-->
+
+      <!-- ================================================================= -->
+
+      <!-- ingredintsSection(displayAereas) start-->
+
+      <section class="ingredints p-3 d-none" id="ingredients">
+        <div class="container text-white text-lg-center p-4">
+          <div class="row g-3" id="mealsIngredints"></div>
+          <div class="row g-3" id="mealaByIngredints">
+            <div class="col-sm-12 col-md-3">
+              <div class="cardBody overflow-hidden">
+                <div
+                  class="inner position-relative border border-black rounded"
+                >
+                  <img
+                    src="imag/58oia61564916529.jpg"
+                    class="w-100 border border-black rounded"
+                    alt=""
+                  />
+                  <div
+                    class="hiddenInfo bg position-absolute border rounded d-flex flex-column justify-content-center"
+                  >
+                    <h2 class="text-center h4">Lorem.</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ingredintsSection(displayAereas) end-->
+
+      <!-- ================================================================= -->
+      <!-- contactUsSection start-->
+
+      <section class="contactUs py-5 d-none" id="contact">
+        <div class="container w-75 text-center py-5">
+          <form class="signUp">
+            <div class="row g-3 my-5">
+              <div class="col-md-6">
+                <input
+                  id="nameInput"
+                  type="text"
+                  class="form-control is-invalid"
+                  placeholder="Enter Your Name"
+                />
+                <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  Special characters and numbers not allowed max char 20
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="emailInput"
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Your Email"
+                />
+                <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  Email not valid *exemple@yyy.zzz
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="phoneInput"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Phone"
+                />
+                <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  Enter valid Phone Number
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="ageInput"
+                  type="number"
+                  class="form-control"
+                  placeholder="Enter Your Age"
+                />
+                <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  Enter valid age
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="passwordInput"
+                  type="password"
+                  class="form-control"
+                  placeholder="Enter Your Password"
+                />
+                <div
+                  id="passwordAlert"
+                  class="alert alert-danger w-100 mt-2 d-none"
+                >
+                  Enter valid password *Minimum eight characters, at least one
+                  letter and one number:*
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="repasswordInput"
+                  type="password"
+                  class="form-control"
+                  placeholder="Repassword"
+                />
+                <div
+                  id="repasswordAlert"
+                  class="alert alert-danger  w-100 mt-2 d-none"
+                >
+                  Enter valid repassword
+                </div>
+              </div>
+            </div>
+            <button
+              id="submitBtn"
+              class="btn btn-outline-danger px-2 mt-3"
+              disabled=""
+              
+
+            >
+              Submit
+            </button>
+
+          </form>
+
+        </div>
+      </section>
+      <!-- contactUsSection end-->
+      <!-- ================================================================= -->
+      <!-- detelisSection start-->
+      <section id="deteils" class="d-none">
+        <div class="container text-white p-2">
+          <div class="row" id="detiBody"></div>
+        </div>
+      </section>
+      <!-- detelisSection end-->
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
